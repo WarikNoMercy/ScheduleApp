@@ -3,8 +3,7 @@ package com.example.scheduleapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-//efwgwefwауац1е3
-//tewgewt
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
