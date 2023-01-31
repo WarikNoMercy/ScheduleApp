@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">ScheduleApp</string>
+    <string name="schedule_edit">Редактировать расписание</string>
     <string name="schedule_butt">Расписание</string>
+    <string name="schedule_head">Что вы хотите сделать?</string>
+    <string name="schedule_check">Посмотреть расписание</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+    <string name="head_edit">На какой день вы хотите изменить расписание?</string>
+    <string name="onToday">На сегодня</string>
+    <string name="onTomorrow">На завтра</string>
+    <string name="onAnotherDay">На другой день</string>
+    <string name="head_check">На какой день вы хотите посмотреть расписание?</string>
 </resources>
