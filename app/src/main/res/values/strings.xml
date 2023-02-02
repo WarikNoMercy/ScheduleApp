@@ -2,6 +2,9 @@
     <string name="app_name">ScheduleApp</string>
     <string name="schedule_edit">Редактировать расписание</string>
     <string name="schedule_butt">Расписание</string>
+    <string name="main">Главная</string>
+    <string name="teachers">Преподаватели</string>
+    <string name="settings">Настройки</string>
     <string name="schedule_head">Что вы хотите сделать?</string>
     <string name="schedule_check">Посмотреть расписание</string>
     <string name="monday">Понедельник</string>

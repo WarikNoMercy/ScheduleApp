@@ -12,13 +12,7 @@
         android:theme="@style/Theme.ScheduleApp"
         tools:targetApi="31">
         <activity
-            android:name=".activity_schedule_check"
-            android:exported="false" />
-        <activity
-            android:name=".activity_schedule_edit"
-            android:exported="false" />
-        <activity
-            android:name=".ScheduleCheckandedit"
+            android:name=".activity_schedule"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

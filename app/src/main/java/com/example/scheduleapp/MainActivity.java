@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void GoToSchedule(View V){
-        Intent intent = new Intent(this,ScheduleCheckandedit.class);
+        Intent intent = new Intent(this,activity_schedule.class);
         startActivity(intent);
     }
 }
