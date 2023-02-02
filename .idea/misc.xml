@@ -5,7 +5,12 @@
       <map>
         <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.288" />
         <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.288" />
-        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_main.xml" value="0.2875" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_schedule.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_schedule_check.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_schedule_checkandedit.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_schedule_edit.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/AndroidStudioProjects/ScheduleApp/app/src/main/res/layout/activity_settings.xml" value="0.2864583333333333" />
       </map>
     </option>
   </component>
