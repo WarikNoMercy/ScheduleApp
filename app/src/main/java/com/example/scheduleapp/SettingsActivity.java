@@ -3,8 +3,10 @@ package com.example.scheduleapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.ToggleButton;
@@ -17,6 +19,25 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         createTheme();
     }
+
+    public void GoToMain(View V){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void GoToSchedule(View V)
+    {
+        Intent intent = new Intent(this, ScheduleActivity.class);
+        startActivity(intent);
+    }
+
+    public void GoToTeachers(View V) {
+        Intent intent = new Intent(this, TeacherActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
     private void createTheme()
     {

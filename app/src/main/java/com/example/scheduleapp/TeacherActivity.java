@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 
-
-public class MainActivity extends AppCompatActivity {
+public class TeacherActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_teacher);
     }
-    public void GoToSchedule(View V){
-        Intent intent = new Intent(this, ScheduleActivity.class);
+
+    public void GoToMain(View V){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -26,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void GoToTeachers(View V){
-        Intent intent = new Intent(this, TeacherActivity.class);
+    public void GoToSchedule(View V) {
+        Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
     }
-
 }
