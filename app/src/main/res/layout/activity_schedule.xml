@@ -6,63 +6,134 @@
     android:layout_height="match_parent"
     tools:context=".ScheduleActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:background="@drawable/home"
-
-        android:onClick="GoToMain"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="48dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="4dp"
-        android:text="Главная"
-        android:textColor="#6200ED"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.994" />
-
     <!--Расписание-->
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:background="@drawable/calendar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="72dp"
-        android:layout_height="12dp"
-        android:text="Расписание"
-        android:textColor="#6200ED"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995" />
 
     <!--Преподаватели-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:context=".MainActivity">
+
+        <!--Главная-->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/home"
+
+            android:onClick="GoToMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.977" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="48dp"
+            android:layout_height="12dp"
+            android:text="@string/main"
+            android:textColor="#6200ED"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.994" />
+
+        <!--Расписание-->
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/calendar"
+            android:onClick="GoToSchedule"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.336"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.977" />
+
+        <!--Преподаватели-->
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="70dp"
+            android:layout_height="13dp"
+            android:text="@string/schedule_butt"
+            android:textColor="#6200ED"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.995" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/teacher"
+            android:onClick="GoToTeachers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.628"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.977" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="87dp"
+            android:layout_height="13dp"
+            android:text="@string/teachers"
+            android:textColor="#6200ED"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.995" />
+
+        <!--Настройки-->
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings"
+            android:onClick="GoToSettings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.977" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="69dp"
+            android:layout_height="14dp"
+            android:text="@string/settings"
+            android:textColor="#6200ED"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.998" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <Button
         android:id="@+id/button15"
         android:layout_width="40dp"
@@ -122,11 +193,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="55dp"
         android:layout_marginBottom="641dp"
         android:text="Расписание"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
