@@ -23,17 +23,20 @@ public class SettingsActivity extends AppCompatActivity {
     public void GoToMain(View V){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSchedule(View V)
     {
         Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToTeachers(View V) {
         Intent intent = new Intent(this, TeacherActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
 
@@ -46,11 +49,9 @@ public class SettingsActivity extends AppCompatActivity {
         switch (currentNightMode)
         {
             case Configuration.UI_MODE_NIGHT_NO:
-                toggle.setText("Перейти на темную");
                 toggle.setChecked(false);
                 break;
             case Configuration.UI_MODE_NIGHT_YES:
-                toggle.setText("Перейти на светлую");
                 toggle.setChecked(true);
                 break;
         }

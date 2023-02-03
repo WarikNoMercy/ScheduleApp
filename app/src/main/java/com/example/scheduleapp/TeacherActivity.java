@@ -12,21 +12,26 @@ public class TeacherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
+        this.finish();
+
     }
 
     public void GoToMain(View V){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSettings(View V)
     {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSchedule(View V) {
         Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
+        this.finish();
     }
 }
