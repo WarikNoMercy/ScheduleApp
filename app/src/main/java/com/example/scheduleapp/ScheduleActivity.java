@@ -18,16 +18,19 @@ public class ScheduleActivity extends AppCompatActivity {
     public void GoToMain(View V){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSettings(View V)
     {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToTeachers(View V) {
         Intent intent = new Intent(this, TeacherActivity.class);
         startActivity(intent);
+        this.finish();
     }
 }

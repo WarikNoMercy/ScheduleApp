@@ -17,16 +17,19 @@ public class TeacherActivity extends AppCompatActivity {
     public void GoToMain(View V){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSettings(View V)
     {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
+        this.finish();
     }
 
     public void GoToSchedule(View V) {
         Intent intent = new Intent(this, ScheduleActivity.class);
         startActivity(intent);
+        this.finish();
     }
 }
